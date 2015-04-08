@@ -1,6 +1,6 @@
 library(sqldf)
 
-f <- file("data/household_power_consumption.txt")
+f <- file("household_power_consumption.txt")
 hpc <- sqldf(
     "select * from f where Date = '1/2/2007' or Date = '2/2/2007'", 
     dbname = tempfile(), 
